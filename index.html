@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" /> <!--Link css-->
+</head>
+
+<body>
+  <header>
+    <h1>To Do List</h1>
+  </header>
+  <nav>
+    <input type="text" id="search-bar" placeholder="Search..." /> <!--Creates search text box-->
+  </nav>
+    <div class="container"> <!-- Uses bootstrap container class-->
+      <form id="todo-form"> <!--Creates the form of the button and events-->
+        <div>
+          <input type="text" id='todo-input' placeholder="Add a new task" required /> <!-- Creates text box-->
+          <input class="btn" type="submit" value="Add Task"> <!--Create the button to add task-->
+        </div>
+      </form>
+      
+      <ul id="todo-list"> <!--Creates the list of tasks-->   <!-- This is the inner HTML for an item of the list that is created dynamically in the javascript--> <!-- TO see the style see style.css-->
+        <li><label class="hero"> <!-- This label contains the custom checkbox and item text-->
+            <div class="box"></div> <!-- Here is the checkbox box -->
+            <div id="list-item">Buy Groceries</div> <!--Item text -->
+            <input type="checkbox"> <!--HTML made checkbox-->
+            <span class="checkmark"></span> <!-- Styled Checkbox-->
+          </label>
+          <span class="edit" title="Edit Item">Edit</span> <!-- Edit button for the item-->
+          <span class="close" title="Delete Item">&#xD7</span> <!-- Close button to delete the item-->
+        </li>
+
+      </ul>
+    </div>
+
+
+  <script src="main.js"></script> <!--Link js file to html-->
+</body>
+
+</html>
+
