@@ -15,5 +15,5 @@ Simply download the folder into your local computer and open the index.html file
 
 ## Contributing
 
-I don't care if you contribue or not because I probably won't look at it 
+I don't care if you contribue or not because I probably won't look at it :)
 
