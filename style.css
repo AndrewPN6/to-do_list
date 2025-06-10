@@ -1,17 +1,16 @@
 /*General Body*/
 * {
   box-sizing: border-box;
-  
 }
 
-
-html, body {
-  height:100%;
+html,
+body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: cursive, 'Lucida Sans', sans-serif;
+  font-family: cursive, "Lucida Sans", sans-serif;
   background-color: rgb(218, 112, 214);
-  background-image: linear-gradient(to bottom right, #43315F, #43315F);
+  background-image: linear-gradient(to bottom right, #43315f, #43315f);
   background-attachment: fixed;
   font-weight: 600;
   scroll-behavior: smooth;
@@ -52,7 +51,7 @@ nav {
   height: auto;
   width: 600px;
   margin-top: 50px;
-  overflow:visible;
+  overflow: visible;
   font-size: 14;
 }
 
@@ -63,7 +62,7 @@ nav {
   z-index: 100;
 }
 
-#todo-form > div{
+#todo-form > div {
   position: relative;
   gap: 10px;
   display: flex;
@@ -72,7 +71,8 @@ nav {
 }
 
 /* Text box*/
-#todo-input, #confirm-edit-input {
+#todo-input,
+#confirm-edit-input {
   height: 50px;
   font-size: 22pt;
   background-image: linear-gradient(to right, #322547, #322547);
@@ -82,17 +82,16 @@ nav {
   margin-bottom: 10px;
   justify-content: center;
   width: 100%;
-  box-shadow: inset 1px 4px 2px rgba(0, 0, 0, 0.05);  
+  box-shadow: inset 1px 4px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-
 }
 
-#confirm-edit-input{
-  width:390px;
+#confirm-edit-input {
+  width: 390px;
 }
 
 /*Search Bar Text Box*/
-#search-bar{
+#search-bar {
   height: 40px;
   font-size: 20pt;
   background-image: linear-gradient(to right, #322547, #322547);
@@ -101,13 +100,11 @@ nav {
   padding-bottom: 0;
   margin-bottom: 10px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-.btn{
-  background-color: #644A8E;
+.btn {
+  background-color: #644a8e;
   color: white;
   height: 50px;
   border-radius: 20px;
@@ -118,11 +115,10 @@ nav {
   transition: box-shadow 0.15s;
 }
 
-.btn:hover{
+.btn:hover {
   opacity: 0.75;
-  background-color: #5F4687;
+  background-color: #5f4687;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 /*List and items*/
@@ -141,17 +137,15 @@ ul li {
   padding: 18px;
   margin: 1px;
   position: relative;
-  background-image: linear-gradient(to right, #533D77, #533D77);  
-  box-shadow:  1px 1px 1px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to right, #533d77, #533d77);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 /* List items that are checked */
 .hero.checked {
   text-decoration: line-through;
   color: #888;
-  
 }
-
 
 /* Checkboxes */
 /* Text Size*/
@@ -185,10 +179,9 @@ ul li {
   left: 0;
   height: 22px;
   width: 22px;
-
 }
 /* Permanant checkbox box */
- .box {
+.box {
   position: absolute;
   top: 7px;
   left: 0;
@@ -200,7 +193,7 @@ ul li {
 }
 
 /* On mouse-over, shows light opacity checkmark for unchecked checkboxes */
-.hero input[type="checkbox"]:not(:checked) ~ .checkmark:hover {
+.hero input[type="checkbox"]:checked ~ .checkmark:hover {
   left: 9px;
   top: 5px;
   width: 8px;
@@ -208,50 +201,35 @@ ul li {
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-  opacity: 0.5; 
+  opacity: 0.5;
 }
-
 
 /* Show the checkmark when checked */
 .hero input:checked ~ .checkmark:after {
   display: block;
 }
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
+
+/* Permanat checkmark once checked*/
+.hero.checked .checkmark {
   position: absolute;
-  display: none;
   left: 9px;
   top: 5px;
   width: 8px;
   height: 18px;
   border: solid white;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  opacity: 1; 
-}
-
-
-/* On mouse-over, shows light opacity checkmark for unchecked checkboxes */
-.hero input[type="checkbox"]:checked ~ .checkmark:hover:after {
-  left: 9px;
-  top: 5px;
-  width: 8px;
-  height: 18px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  opacity: 1; 
+  transform: rotate(40deg);
+  opacity: 1;
+  display: block;
 }
 
 /* Item List*/
 .list-item {
-  overflow:auto;
+  overflow: auto;
 }
 
-
 /* Delete Button to delete items from the list */
-.close{
+.close {
   position: absolute;
   right: 10px;
   top: 25px;
@@ -260,8 +238,8 @@ ul li {
   cursor: pointer;
   opacity: 1;
   font-weight: 50px;
-  background:none;
-  border:none;
+  background: none;
+  border: none;
   transition: color 0.15s;
 }
 
@@ -284,8 +262,8 @@ ul li {
   cursor: pointer;
   opacity: 1;
   font-weight: 30px;
-  background:none;
-  border:none;
+  background: none;
+  border: none;
   justify-content: center;
   transition: color 0.15s;
 }
@@ -300,8 +278,8 @@ ul li {
 }
 
 /* Confirm-edit button*/
-.confirmedit-btn{
-  background-color: #533D77;
+.confirmedit-btn {
+  background-color: #533d77;
   color: white;
   height: 50px;
   border-radius: 20px;
@@ -310,10 +288,9 @@ ul li {
   cursor: pointer;
   margin-left: 10px;
   transition: color 0.15s;
-
 }
 
-.confirmedit-btn:hover{
+.confirmedit-btn:hover {
   opacity: 0.8;
   color: grey;
 }
