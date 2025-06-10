@@ -44,15 +44,22 @@ nav {
 
 /* Container where items go*/
 .container {
+  position: relative;
   display: block;
   align-items: center;
   background-size: cover;
   color: #ffffff;
-  height: 800px;
+  height: auto;
   width: 600px;
   margin-top: 50px;
   overflow:visible;
   font-size: 14;
+}
+
+#todo-form {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #todo-form > div{
@@ -70,13 +77,15 @@ nav {
   background-image: linear-gradient(to right, #322547, #322547);
   border: none;
   color: white;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   margin-bottom: 10px;
   justify-content: center;
   width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+  box-shadow: inset 1px 4px 2px rgba(0, 0, 0, 0.05);  
+  border-radius: 10px;
 
 }
+
 #confirm-edit-input{
   width:390px;
 }
@@ -97,7 +106,7 @@ nav {
 
 
 .btn{
-  background-color: #533D77;
+  background-color: #644A8E;
   color: white;
   height: 50px;
   border-radius: 20px;
@@ -128,7 +137,7 @@ ul li {
   border: white transparent;
   border-width: thin;
   border-radius: 20px;
-  padding: 20px;
+  padding: 18px;
   margin: 1px;
   position: relative;
   background-image: linear-gradient(to right, #533D77, #533D77);  
