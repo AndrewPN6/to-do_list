@@ -56,6 +56,7 @@ nav {
   font-size: 14;
 }
 
+/* Form that contains the input box and buttons and is sticky meaning that the it always appear on screen (even if you scroll)*/
 #todo-form {
   position: sticky;
   top: 0;
