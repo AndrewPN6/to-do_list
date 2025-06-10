@@ -40,8 +40,6 @@ nav {
   padding: 0;
 }
 
-
-
 /* Container where items go*/
 .container {
   display: block;
@@ -120,9 +118,6 @@ nav {
 
 }
 
-
-
-
 /*List and items*/
 ul {
   list-style: none;
@@ -164,8 +159,6 @@ ul li {
   -ms-user-select: none;
   user-select: none;
 }
-
-
 
 /* Hide the browser's default checkbox */
 .hero input {
