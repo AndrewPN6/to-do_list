@@ -193,7 +193,7 @@ ul li {
 }
 
 /* On mouse-over, shows light opacity checkmark for unchecked checkboxes */
-.hero input[type="checkbox"]:checked ~ .checkmark:hover {
+.hero input[type="checkbox"]:not(:checked) ~ .checkmark:hover {
   left: 9px;
   top: 5px;
   width: 8px;
