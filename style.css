@@ -105,18 +105,13 @@ nav {
   margin: 0;
 }
 
-
-.confirmedit-btn{
-  background-color: #533D77;
-  color: white;
-  height: 50px;
-  border-radius: 20px;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  margin-left: 10px;
-
+.btn:hover{
+  opacity: 0.75;
+  background-color: #5F4687;
 }
+
+
+
 
 /*List and items*/
 ul {
@@ -212,10 +207,6 @@ ul li {
   content: "";
   position: absolute;
   display: none;
-}
-
-/* Style the checkmark/indicator */
-.checkmark:after {
   left: 9px;
   top: 5px;
   width: 8px;
@@ -225,6 +216,7 @@ ul li {
   transform: rotate(45deg);
   opacity: 1; 
 }
+
 
 /* On mouse-over, shows light opacity checkmark for unchecked checkboxes */
 .hero input[type="checkbox"]:checked ~ .checkmark:hover:after {
@@ -256,6 +248,7 @@ ul li {
   font-weight: 50px;
   background:none;
   border:none;
+  transition: color 0.15s;
 }
 
 /* On hover, changes color and opacity */
@@ -280,6 +273,7 @@ ul li {
   background:none;
   border:none;
   justify-content: center;
+  transition: color 0.15s;
 }
 
 /* On hover, changes color and opacity */
@@ -292,5 +286,20 @@ ul li {
 }
 
 
+.confirmedit-btn{
+  background-color: #533D77;
+  color: white;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.15s;
 
+}
 
+.confirmedit-btn:hover{
+  opacity: 0.8;
+  color: grey;
+}
