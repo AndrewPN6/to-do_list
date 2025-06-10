@@ -103,11 +103,14 @@ nav {
   font-size: 22px;
   cursor: pointer;
   margin: 0;
+  transition: box-shadow 0.15s;
 }
 
 .btn:hover{
   opacity: 0.75;
   background-color: #5F4687;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 
